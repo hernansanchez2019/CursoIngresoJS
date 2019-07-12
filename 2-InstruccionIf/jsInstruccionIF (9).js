@@ -1,14 +1,20 @@
 function mostrar()
 {
 	//Genero el número RANDOM entre 1 y 10 
-	var numeroRandom;
+	var random;
 	
-	numeroRandom = Math.floor(Math.Random() * 10+1 );
+	random = Math.floor(Math.random() * 10+1 );
+
+	if ( random >=1 ) {
+
+     alert(random);
+
+	}
 	
 
-	if ( numeroRandom>=9 ) {
+	
 
-		alert( " excelente ");}
+	
 
 	
 	
