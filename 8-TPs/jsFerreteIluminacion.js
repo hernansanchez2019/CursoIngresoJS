@@ -21,16 +21,18 @@ function CalcularPrecio() {
     PrecioDescuento = parseInt(document.getElementById("PrecioDescuento").value);
 
     switch (Marca) {
-        
+
         case "ArgentinaLuz":
-            if(Cantidad==5);{
-             descuento = Cantidad*35 - .40;}
-             PrecioDescuento = descuento;
-             document.getElementById("PrecioDescuento").value=PrecioDescuento;
+            if (Cantidad == 5); {
+                descuento = Cantidad * 35 - .40;
+                PrecioDescuento = descuento;
+            }
+            
+            document.getElementById("PrecioDescuento").value = PrecioDescuento;
 
-        
 
-             }
+
+    }
 
 
 

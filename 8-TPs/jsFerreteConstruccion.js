@@ -16,7 +16,7 @@ function Rectangulo() {
     Ancho = parseInt(document.getElementById("Ancho").value);
     resultado = Largo * Ancho * 3;
 
-    alert(" La cantidad de alambre a comprar es " + resultado + "");
+    alert(" La cantidad de alambre a comprar es " + resultado + " metros ");
 
 }
 
@@ -32,7 +32,7 @@ function Circulo() {
     Radio = parseFloat(document.getElementById("Radio").value);
     resultado = Radio * 3.14 * 3;
 
-    alert(" La cantidad de alambre a comprar es " + resultado);
+    alert(" La cantidad de alambre a comprar es " + resultado + " metros ");
 
 
 }
@@ -47,8 +47,8 @@ function Materiales() {
 
     Largo = parseInt(document.getElementById("Largo").value);
     Ancho = parseInt(document.getElementById("Ancho").value);
-    cemento = Largo * Ancho * 2;
-    cal = Largo * Ancho * 3;
+    cemento = Largo + Ancho * 2;
+    cal = Largo + Ancho * 3;
 
     alert(" Se necesitan " + cemento + " bolsas de cemento y " + cal + " bolsas de cal ");
 
