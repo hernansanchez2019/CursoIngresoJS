@@ -4,53 +4,59 @@ mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
 {	
-var num1;
-var num2;
-var resultado;
 
-num1 = parseInt( document.getElementById("numeroUno").value);
-num2 = parseInt( document.getElementById("numeroDos").value);
-resultado = num1 + num2;
+    var numeroUno;
+    var numeroDos;
+    var resultado;
+    
+    numeroUno = parseInt(document.getElementById("numeroUno").value);
+    numeroDos = parseInt(document.getElementById("numeroDos").value);
+    resultado = numeroUno + numeroDos;
+    
+    alert(" La suma es " + resultado);
 
-alert(" la suma es  " + resultado);
 }
-
 function restar()
-{
-var num1;
-var num2;
-var resultado;
+ {       
+   
+    var numeroUno;
+    var numeroDos;
+    var resultado;
+    
+    numeroUno = parseInt(document.getElementById("numeroUno").value);
+    numeroDos = parseInt(document.getElementById("numeroDos").value);
+    resultado = numeroUno - numeroDos; 
+    
+    alert(" La resta es " + resultado);}
+    
+    
+    function multiplicar()
+ { 
 
-num1 = parseInt( document.getElementById("numeroUno").value);
-num2 = parseInt( document.getElementById("numeroDos").value);
-resultado = num1 - num2;
+    
+    var numeroUno;
+    var numeroDos;
+    var resultado;
+    
+    numeroUno = parseInt(document.getElementById("numeroUno").value);
+    numeroDos = parseInt(document.getElementById("numeroDos").value);
+    resultado = numeroUno * numeroDos;
+ alert(" La multiplicacion es " + resultado);}
 
-alert(" la resta es  " + resultado);
-}
 
-function multiplicar()
-{ 
-var num1;
-var num2;
-var resultado;
+     function dividir()
+ {
 
-num1 = parseInt( document.getElementById("numeroUno").value);
-num2 = parseInt( document.getElementById("numeroDos").value);
-resultado = num1 * num2;
+ 
+    var numeroUno;
+    var numeroDos;
+    var resultado;
+    
+    numeroUno = parseInt(document.getElementById("numeroUno").value);
+    numeroDos = parseInt(document.getElementById("numeroDos").value);
+    resultado = numeroUno / numeroDos;
 
-alert(" la multiplicacion es  " + resultado);
-}
-
-function dividir()
-{
-var num1;
-var num2;
-var resultado;
-
-num1 = parseInt( document.getElementById("numeroUno").value);
-num2 = parseInt( document.getElementById("numeroDos").value);
-resultado = num1 / num2;
-
-alert(" la division es  " + resultado);
+     alert(" La division es " + resultado);
+    
 }
 

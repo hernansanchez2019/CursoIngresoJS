@@ -1,32 +1,36 @@
 function mostrar()
 {
 
-
+var mes;
+ 
 mes = document.getElementById("mes").value;
 
-switch ( mes){
+switch (mes) {
 
-     case "Enero":
-        
-       alert( " Que comiences bien el año!!! ");
-     break;
+  
+  case "Enero":
+    alert(" Que comiences bien el año !!! ");
+    break;
 
-    case "Marzo":
 
-      alert(" A clases!!! ");
-      break;
 
-    case "Julio":
+case "Marzo":
+  alert(" A clases !!! ");
+  break;
 
-       alert("se viene las vacaciones!!!");
-       break;
 
-    case  "Diciembre":
 
-      alert(" felices fiestas !!!");
+  case "Julio":
+  alert(" se viene las vacaciones !!! ");
+  break;
 
-       break;}
 
+
+case "Diciembre":
+  alert(" felices fiestas!!! ");
+  break;
+
+   }
 
 
 }

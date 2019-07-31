@@ -1,24 +1,31 @@
 function mostrar()
 {  
+var mes;
 
-mes = document.getElementById('mes').value;
+mes = document.getElementById("mes").value;
 
-switch ( mes){
+switch (mes){
 
-     case "Julio":
-     
-     alert(" abrigate que hace frio "); 
-     break;
-     
+    case "Julio":
+        alert(" Abrigate que hace frio ");
+        break;
 
-    case "Junio":
+    case "Agosto":
+        alert(" abrigate q hace frio ");
+        break;
 
-    alert(" falta para el invierno ");
-    break;
+        case "Junio":
+            alert(" Falta para el invierno ");
+            break;
 
-    case "Diciembre":
+            case "Septiembre":
+                alert(" ya pasamos el frio ahora calor!!! ");
+                break;
 
-    alert( " ya pasamos el frio, ahora calor");
-    break;}
+
+
+
+     }
+
 
 }

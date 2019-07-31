@@ -1,29 +1,67 @@
 function mostrar()
 {
-//tomo la edad  
-var mes = document.getElementById("mes").value;
+ var mes;
 
-switch ( mes ) {
+ mes = document.getElementById("mes").value;
 
-      case "Febrero":
-          alert( " tiene 28 dias");
-          break;
+ switch (mes){
 
-        case "Abril" :
-           case  "Junio":
-            case "Septiembre":
-            case  "Noviembre":
-             alert( " tiene 30 dias ");
+    case "Enero":
+             alert(" Tiene 31 dias ");
+        break;
+
+    case "Febrero":
+            alert(" tiene 28 dias ");
+            break;
+
+    case "Marzo":
+             alert(" Tiene 31 dias ");
              break;
-     default:
-          alert( " tiene 31 dias ");
+
+
+    case  "Abril":
+             alert(" Tiene 30 dias");
+             break;
+
+    case  "Mayo":
+             alert(" Tiene 31 dias ");
+             break;
+
+    case "Junio":
+            alert(" Tiene 30 dias");
+            break;
+
+    case "Julio":
+            alert(" Tiene 31 dias ");
+            break;
+
+    case "Agosto":
+            alert(" Tiene 31 dias ");
+            break;
+
+    case "Septiembre":
+            alert(" Tiene 30 dias");
+            break;
+
+    case "Octubre":
+            alert(" Tiene 31 dias ");
+            break;
+
+    case "Noviembre":
+            alert(" Tiene 30 dias");
+            break;
+
+    case "Diciembre":
+            alert(" Tiene 31 dias ");
+            break;
+
+
+        
 
 
 
-  }
-//alert (mesDelAño);
-	
-	
+   }
+
 
 
 
