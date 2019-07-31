@@ -12,25 +12,71 @@ function CalcularPrecio() {
 
     var Cantidad;
     var Marca;
-    var PrecioDescuento;
+    var PrecioDescuento = 0;
     var lampara = 35;
     var descuento;
+    var PrecioFinal;
+    var IVA;
 
     Cantidad = parseInt(document.getElementById("Cantidad").value);
     Marca = document.getElementById("Marca").value;
     PrecioDescuento = parseInt(document.getElementById("PrecioDescuento").value);
 
-    switch (Marca) {
+    switch (Cantidad) {
 
-        case "ArgentinaLuz":
-            if (Cantidad == 5); {
-                descuento = Cantidad * 35 - .40;
-                PrecioDescuento = descuento;
+        case "3":
+            if (Marca == "ArgetinaLuz") {
+                descuento = .15;
             }
+
+
+
+            else if (Marca == "FelipeLamparas") {
+
+                descuento = .10;
+            }
+
+
+
+            else {
+
+                descuento = .5
+
+
+            }
+
+
+
+        case "4":
+            if (Marca == "ArgentinaLuz" || Marca == "FelipeLamparas") {
+                
+                descuento =.25;
+        
+            }
+
+            else {
+                
+                descuento = .20;}
+                
+        case "5":
+            if (Marca == "ArgetinaLuz"){
             
-            document.getElementById("PrecioDescuento").value = PrecioDescuento;
+            descuento = .40;
+        }
+            
+              else {
+
+                descuento = .30;
+                
+
+            }
 
 
+        case "6":
+            if (Cantidad >= 6){
+                Cantidad = Cantidad * 35;
+            descuento = Cantidad * 50 / 100;
+            
 
     }
 
@@ -39,7 +85,34 @@ function CalcularPrecio() {
 
 
 
+}
+
+
+
+
+
+if (PrecioDescuento > 120) {
+
+
+    IVA = PrecioDescuento + .10;
+    PrecioDescuento =
+        alert("  Usted pago " + PrecioFinal +  );
+
+
+}
+document.getElementById("PrecioDescuento").value = PrecioDescuento;
+
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
