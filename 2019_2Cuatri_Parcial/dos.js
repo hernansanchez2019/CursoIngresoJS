@@ -8,6 +8,7 @@ function mostrar() {
   var sumadorPeso = 0;
   var flag = 0;
   var edadMax;
+  var cantidadAnimales=0;
 
   while (contador < 4) {
 
@@ -46,8 +47,16 @@ function mostrar() {
 
   }
 
+  if ( peso <10 && edad >10 ){
+
+    cantidadAnimales++
+  }
+
   document.write("1- El promedio de los peso totales es : " + promedio + "<br>");
-  document.write("2-  El nombre del perro mas viejo : " + maxNombre + "<br>");
+  document.write("2- El nombre del perro mas viejo : " + maxNombre + "<br>");
+  document.write("3- La cantidad animales menores a 10 kilos de mas de 10 años " + cantidadAnimales + "<br>");
+
+
 }
 
 
