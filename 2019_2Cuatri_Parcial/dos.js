@@ -1,53 +1,70 @@
 function mostrar() {
-  var mascota;
-  var edad;
-  var peso;
   var nombre;
-  var acumulador=0;
-  var perroviejo;
-  var nombreViejo;
-  var contador=0;
+  var peso;
+  var tipo;
+  var edad;
+  var contador = 0;
+  var promedio;
+  var sumadorPeso = 0;
+  var flag = 0;
+  var edadMax;
 
-  
+  while (contador < 4) {
 
-  for ( mascota==1; mascota<=4; mascota++){
+    do {
+      peso = prompt(" Ingrese el peso ");
+    } while (isNaN(peso) || peso < 1 || peso > 100);
 
+    do {
+      edad = prompt(" Ingrese la edad ");
+    } while (isNaN(edad) || edad < 1 || edad > 25);
 
-  mascota = prompt(" Ingrese el tipo de mascota ");
+    do {
+      tipo = prompt(" Ingrese el tipo de mascota ");
+    } while (tipo != "perro" && tipo != "gato");
 
-  while (mascota != perro && mascota != gato && mascota != conejo && mascota != tortuga) {
+    nombre = prompt(" Ingrese el nombre de la mascota ");
 
-    alert(" dato Invalido ");
-  }
-  edad = parseInt(prompt(" Ingrese la edad "));
+    contador++;
 
-  while (edad < 1 && edad > 25) {
-
-    alert(" Dato invalido ");
-
-  }
-  peso = parseInt(prompt(" Ingrese el peso "));
-  while (peso < 1 && peso > 100) {
-
-    alerr(" dato invalido ");
-    contador++
-  }
-  acumulador = peso + acumulador;
-
-  while ( nombre==firulais){
-
-  if (edad == 7) {
-
-    perroviejo = 7;
-    nombreViejo = perroviejo;
+    peso = parseInt(peso);
+    sumadorPeso = sumadorPeso + peso;
 
   }
-  else  if (edad>26){
-    alert( " error ");
-  }
+  promedio = sumadorPeso / contador;
+
+  if (tipo == "perro" && flag == 0) {
+
+    edadMax = edad;
+    maxNombre = nombre;
+    flag = 1;
+
+  } if (tipo == "perro" && edad > edadMax) {
+
+    edadMax = edad;
+    maxNombre = nombre;
+
   }
 
-
-  }
-
+  document.write("1- El promedio de los peso totales es : " + promedio + "<br>");
+  document.write("2-  El nombre del perro mas viejo : " + maxNombre + "<br>");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
