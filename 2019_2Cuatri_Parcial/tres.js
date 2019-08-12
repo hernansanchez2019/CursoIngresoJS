@@ -55,7 +55,7 @@ function mostrar() {
 
     if (temperatura > 40) {
 
-      contadordetemperaturasaltas++
+      contadordetemperaturasaltas++;
     }
 
 

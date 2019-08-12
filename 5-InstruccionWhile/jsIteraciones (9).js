@@ -1,29 +1,41 @@
-function mostrar()
-{
-    var numero=0;
-	var positivo=0;
-	var negativo=1;
-	var seguir='si';
-   
-	
-	while (seguir=='si'){
-		numero= parseInt(prompt(" Ingrese numero "));}
-	  
+function mostrar() {
+	var numeros;
+	var respuesta = 's';
+	var numeromaximo = 0;
+	var numerominimo = 0;
+	var flag = 0;
+
+
+	do {
+
+		numeros = parseInt(prompt(" Ingrese numero "));
 		
-		do{
+		respuesta = prompt(" Quiere ingresar otro numero ? ");
 
-		numero= parseInt(prompt(" Ingrese numero "));
+	 
 
-		  if( numero>0){
+		 if (numeros > numeromaximo || flag == 0) 
+		 {
 
-			numero= positivo + numero
-		  }
-		  
-		  if ( numero<0){
+		numeromaximo = numeros;
+	
+		}
 
-			numero= negativo + numero
-		  }
 
+	     
+
+			if (numeros < numerominimo || flag == 0) {
+	
+			numerominimo = numeros;
+				flag = 1;
+	}
+
+
+	}while (respuesta == 's')
+
+
+	document.getElementById("maximo").value = numeromaximo;
+	document.getElementById("minimo").value = numerominimo;
 
 
 }

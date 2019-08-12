@@ -10,6 +10,7 @@ function mostrar() {
   var edadMax;
   var cantidadAnimales=0;
 
+
   while (contador < 4) {
 
     do {
